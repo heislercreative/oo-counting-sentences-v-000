@@ -14,8 +14,7 @@ class String
     self.end_with?("!")
   end
 
-  def count_sentences
-    self.split("." || "?" || "!").reject{|str| str.empty?}.count
-    
+  def count_sentences(complex_string)
+    self.split("." || "?" || "!").reject{|str| str.empty?}
   end
 end
