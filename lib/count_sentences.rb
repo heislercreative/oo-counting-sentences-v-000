@@ -15,6 +15,7 @@ class String
   end
 
   def count_sentences(complex_string)
+    binding.pry
     self.split("." || "?" || "!").reject{|str| str.empty?}
   end
 end
